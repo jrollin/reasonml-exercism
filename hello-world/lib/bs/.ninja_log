@@ -1,0 +1,26 @@
+# ninja log v5
+# start_time end_time mtime command hash
+1	6	1578944780652037214	HelloWorld.cmi	ab960603d0bc071
+0	10	1578944780656037127	src/HelloWorld.reiast	3b4e8ba0320b5e57
+0	11	1578944780652037214	__tests__/HelloWorld_test.reast	1ed5e28f5e9cbf15
+11	12	1578944780656037127	__tests__/HelloWorld_test.d	3358e1d7fe2ecf7a
+0	12	1578944780656037127	src/HelloWorld.reast	10477eed905bf8dc
+12	16	1578944780660037041	src/HelloWorld.d	2cdd8a07347a328e
+16	20	1578944780664036955	src/HelloWorld-HelloWorld.cmi	4ee019960e34200e
+20	24	1578944780668036868	src/HelloWorld-HelloWorld.cmj	c567872520675dca
+20	24	1578944780668036868	/home/julien/snap/exercism/5/exercism/reasonml/hello-world/src/HelloWorld.bs.js	c567872520675dca
+24	29	1578944780676036696	__tests__/HelloWorld_test-HelloWorld.cmj	cc577b8f85af569c
+24	29	1578944780676036696	__tests__/HelloWorld_test-HelloWorld.cmi	cc577b8f85af569c
+24	29	1578944780676036696	/home/julien/snap/exercism/5/exercism/reasonml/hello-world/__tests__/HelloWorld_test.bs.js	cc577b8f85af569c
+0	11	1578945028830679283	src/HelloWorld.reast	10477eed905bf8dc
+11	13	1578945028830679283	src/HelloWorld.d	2cdd8a07347a328e
+13	18	1578945028830679283	src/HelloWorld-HelloWorld.cmj	c567872520675dca
+13	18	1578945028830679283	/home/julien/snap/exercism/5/exercism/reasonml/hello-world/src/HelloWorld.bs.js	c567872520675dca
+0	8	1578945034622554243	src/HelloWorld.reast	10477eed905bf8dc
+8	13	1578945034622554243	src/HelloWorld.d	2cdd8a07347a328e
+13	20	1578945034622554243	src/HelloWorld-HelloWorld.cmj	c567872520675dca
+13	20	1578945034622554243	/home/julien/snap/exercism/5/exercism/reasonml/hello-world/src/HelloWorld.bs.js	c567872520675dca
+0	9	1578945038110478941	src/HelloWorld.reast	10477eed905bf8dc
+9	11	1578945038110478941	src/HelloWorld.d	2cdd8a07347a328e
+11	17	1578945038110478941	src/HelloWorld-HelloWorld.cmj	c567872520675dca
+11	17	1578945038110478941	/home/julien/snap/exercism/5/exercism/reasonml/hello-world/src/HelloWorld.bs.js	c567872520675dca
