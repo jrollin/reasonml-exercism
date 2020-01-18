@@ -1,0 +1,1 @@
+{ "dirs" : [ "__tests__" , "src" ] , "pkgs" : [ [ "@glennsl/bs-jest" , "/home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/@glennsl/bs-jest" ] , [ "bs-platform" , "/home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/bs-platform" ] ] , "generated" : [] }

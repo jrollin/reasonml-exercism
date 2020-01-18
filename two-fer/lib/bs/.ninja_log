@@ -1,0 +1,14 @@
+# ninja log v5
+# start_time end_time mtime command hash
+2	9	1579359491406869453	TwoFer.cmi	4596ff2edaa376ef
+0	11	1579359491406869453	__tests__/TwoFer_test.reast	ae0090ef492ba40e
+0	12	1579359491410869318	src/TwoFer.reiast	f5fd0bc2acee7bb0
+11	13	1579359491410869318	__tests__/TwoFer_test.d	ce6177f62b355357
+0	14	1579359491410869318	src/TwoFer.reast	1ee90528e9695ded
+14	16	1579359491414869183	src/TwoFer.d	9e3c1a397ef34a3a
+16	22	1579359491418869048	src/TwoFer-TwoFer.cmi	8373e3b9836233ce
+22	27	1579359491426868779	src/TwoFer-TwoFer.cmj	b035b33c54dd1b6c
+22	27	1579359491426868779	/home/julien/snap/exercism/5/exercism/reasonml/two-fer/src/TwoFer.bs.js	b035b33c54dd1b6c
+27	35	1579359491434868509	__tests__/TwoFer_test-TwoFer.cmj	a993ffef59650f18
+27	35	1579359491434868509	__tests__/TwoFer_test-TwoFer.cmi	a993ffef59650f18
+27	35	1579359491434868509	/home/julien/snap/exercism/5/exercism/reasonml/two-fer/__tests__/TwoFer_test.bs.js	a993ffef59650f18

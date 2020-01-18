@@ -1,0 +1,53 @@
+g_std_incl = /home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/bs-platform/lib/ocaml
+g_pkg_flg = -bs-package-name two-fer -bs-ns TwoFer
+src_root_dir = /home/julien/snap/exercism/5/exercism/reasonml/two-fer
+bsc = /home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/bs-platform/lib/bsc.exe
+bsdep = /home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/bs-platform/lib/bsb_helper.exe
+warnings = -w -30-40+6+7+27+32..39+44+45+101 -warn-error +101
+bsc_flags = 
+ppx_flags = 
+g_dpkg_incls = -I /home/julien/snap/exercism/5/exercism/reasonml/two-fer/node_modules/@glennsl/bs-jest/lib/ocaml
+g_ns = -bs-ns TwoFer
+bsb_dir_group = 0
+bsc_group_1_includes = -I __tests__
+g_lib_incls = -I . -I src
+rule build_ast_from_re
+  command = $bsc  $warnings -color always $bsc_flags -o $out -bs-syntax-only -bs-binary-ast $in
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/TwoFer_test.reast : build_ast_from_re $src_root_dir/__tests__/TwoFer_test.re
+rule build_deps
+  command = $bsdep -hash 714592dceff970c43ec1e659e4a4d500 $g_ns -g $bsb_dir_group $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/TwoFer_test.d : build_deps __tests__/TwoFer_test.reast
+  bsb_dir_group = 1
+rule ml_cmj_cmi_dev
+  command = $bsc -nostdlib $g_pkg_flg -color always -bs-suffix $g_dev_incls $g_lib_incls $g_dpkg_incls -I $g_std_incl $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  __tests__/TwoFer_test-TwoFer.cmj |  __tests__/TwoFer_test-TwoFer.cmi $src_root_dir/__tests__/TwoFer_test.bs.js : ml_cmj_cmi_dev __tests__/TwoFer_test.reast ||  __tests__/TwoFer_test.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:__tests__
+  g_dev_incls = $bsc_group_1_includes
+build  src/TwoFer.reast : build_ast_from_re $src_root_dir/src/TwoFer.re
+build  src/TwoFer.d : build_deps src/TwoFer.reast src/TwoFer.reiast
+build  src/TwoFer.reiast : build_ast_from_re $src_root_dir/src/TwoFer.rei
+rule ml_cmi
+  command = $bsc -nostdlib $g_pkg_flg -color always -bs-suffix $g_lib_incls -I $g_std_incl $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  src/TwoFer-TwoFer.cmi : ml_cmi src/TwoFer.reiast ||  src/TwoFer.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:src
+rule ml_cmj_only
+  command = $bsc -nostdlib $g_pkg_flg -color always -bs-suffix -bs-read-cmi $g_lib_incls -I $g_std_incl $warnings $bsc_flags -o $out $in
+  dyndep = $in_e.d
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  src/TwoFer-TwoFer.cmj |  $src_root_dir/src/TwoFer.bs.js : ml_cmj_only src/TwoFer.reast |  src/TwoFer-TwoFer.cmi ||  src/TwoFer.d
+  g_pkg_flg = $g_pkg_flg  -bs-package-output commonjs:src
+rule build_package
+  command = $bsc -w -49 -color always -no-alias-deps  $in
+  restat = 1
+  description = [34mBuilding[39m [2m${out}[22m
+build  TwoFer.cmi : build_package TwoFer.mlmap
