@@ -1,0 +1,33 @@
+# ninja log v5
+# start_time end_time mtime command hash
+0	6	1579359998714294629	ResistorColor.cmi	e703fc04f4a130d
+0	10	1579359998714294629	src/ResistorColor.reast	83e57ef90d91299d
+0	10	1579359998714294629	__tests__/ResistorColor_test.reast	d0b4b96c41a6851a
+0	10	1579359998714294629	src/ResistorColor.reiast	8149cfa4df6de838
+10	12	1579359998718294501	__tests__/ResistorColor_test.d	284b7b985335ff8b
+11	12	1579359998718294501	src/ResistorColor.d	e2317858efc284fc
+12	15	1579359998722294374	src/ResistorColor-ResistorColor.cmi	a4a7ab2f2d651ff7
+15	20	1579359998726294246	src/ResistorColor-ResistorColor.cmj	faed11f6555fc734
+15	20	1579359998726294246	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/src/ResistorColor.bs.js	faed11f6555fc734
+20	26	1579359998734293991	__tests__/ResistorColor_test-ResistorColor.cmj	e46ce50385b537ca
+20	26	1579359998734293991	__tests__/ResistorColor_test-ResistorColor.cmi	e46ce50385b537ca
+20	26	1579359998734293991	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/__tests__/ResistorColor_test.bs.js	e46ce50385b537ca
+0	12	1579360023561501906	src/ResistorColor.reast	83e57ef90d91299d
+12	14	1579360023561501906	src/ResistorColor.d	e2317858efc284fc
+14	18	1579360023569501651	src/ResistorColor-ResistorColor.cmj	faed11f6555fc734
+14	18	1579360023569501651	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/src/ResistorColor.bs.js	faed11f6555fc734
+19	26	1579360023569501651	__tests__/ResistorColor_test-ResistorColor.cmj	e46ce50385b537ca
+19	26	1579360023569501651	__tests__/ResistorColor_test-ResistorColor.cmi	e46ce50385b537ca
+19	26	1579360023569501651	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/__tests__/ResistorColor_test.bs.js	e46ce50385b537ca
+0	11	1579360114818600345	src/ResistorColor.reast	83e57ef90d91299d
+11	13	1579360114818600345	src/ResistorColor.d	e2317858efc284fc
+13	19	1579360114818600345	src/ResistorColor-ResistorColor.cmj	faed11f6555fc734
+13	19	1579360114818600345	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/src/ResistorColor.bs.js	faed11f6555fc734
+1	13	1579360137445883097	src/ResistorColor.reast	83e57ef90d91299d
+13	16	1579360137445883097	src/ResistorColor.d	e2317858efc284fc
+16	24	1579360137445883097	src/ResistorColor-ResistorColor.cmj	faed11f6555fc734
+16	24	1579360137445883097	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/src/ResistorColor.bs.js	faed11f6555fc734
+0	10	1579360145917614767	src/ResistorColor.reast	83e57ef90d91299d
+10	12	1579360145917614767	src/ResistorColor.d	e2317858efc284fc
+12	21	1579360145917614767	src/ResistorColor-ResistorColor.cmj	faed11f6555fc734
+12	21	1579360145917614767	/home/julien/snap/exercism/5/exercism/reasonml/resistor-color/src/ResistorColor.bs.js	faed11f6555fc734
